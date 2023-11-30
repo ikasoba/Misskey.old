@@ -1,0 +1,38 @@
+{
+  "themeColor": "#86b300",
+  "sessionKey": "session",
+  "sessionSecret": "session_secret",
+  "cookie_pass": "./.cookies/",
+  "mongo": {
+    "uri": "mongodb://localhost:27017/admin",
+    "options": {
+      "user": "root",
+      "pass": "example"
+    }
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "port": {
+    "web": 8080,
+    "api": 8081,
+    "streaming": 1207,
+    "redis": 6379
+  },
+  "publicConfig": {
+    "themeColor": "#86b300",
+    "env": "development",
+    "domain": "misskey-old.localhost",
+    "webHost": "misskey-old.localhost",
+    "apiHost": "api.misskey-old.localhost",
+    "devHost": "dev.misskey-old.localhost",
+    "hostname": "misskey-old.localhost:8080",
+    "url": "http://misskey-old.localhost:8080",
+    "apiUrl": "http://api.misskey-old.localhost:8080",
+    "streamingUrl": "http://api.misskey-old.localhost:8080",
+    "productionChannelUrl": "http://misskey-old.localhost:8080",
+    "developmentChannelUrl": "http://misskey-old.localhost:8080"
+  },
+  "webappid": "misskey-old"
+}

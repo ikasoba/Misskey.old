@@ -47,7 +47,7 @@ module.exports = (app) ->
 	# General
 	app.get /^\/resources\/.*/ (req, res, next) ->
 		is-login = req.session? && req.session.user-id?
-		
+
 		switch
 		| (req.path.index-of '..') > -1 =>
 			res

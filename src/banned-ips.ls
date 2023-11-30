@@ -1,1 +1,1 @@
-module.exports = require '../../../banned-ips.json'
+module.exports = require '../banned-ips.json'

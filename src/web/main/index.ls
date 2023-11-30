@@ -33,10 +33,7 @@ server.set 'X-Frame-Options' \SAMEORIGIN
 server.use cors	do
 	credentials: on
 	origin:
-		* 'https://misskey.xyz'
-		* 'https://misskey.xyz:1206'
-		* 'http://dev.misskey.xyz'
-		* 'http://dev.misskey.xyz:1205'
+		* "#{config.public-config.url}"
 server.use body-parser.urlencoded {+extended}
 server.use cookie-parser config.cookie-pass
 

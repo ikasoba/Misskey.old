@@ -10,6 +10,9 @@ require! {
 
 module.exports = (app) ->
 	app.all '*' (req, res, next) ->
+		if config.github-webhook-secret == undefined
+			return next!
+
 		handler = github-webhook-handler {path: '/github-webhook', secret: config.github-webhook-secret}
 
 		(err, noticer) <- User.find-one {screen-name: 'misskey_github'}
